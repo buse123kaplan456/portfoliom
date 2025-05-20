@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Buse Kaplan - Web Tasarımcı</title>
   <style>
-    /* Reset ve temel stil */
     * {
       margin: 0;
       padding: 0;
@@ -15,57 +14,38 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
       color: #333;
-      background: #f9f9f9;
+      background: #f4f9ff;
     }
     header {
-      background: #008cba;
+      background: linear-gradient(45deg, #008cba, #00a6e0);
       color: white;
-      padding: 15px 20px;
+      padding: 40px 20px 20px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
       position: sticky;
       top: 0;
       z-index: 1000;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    header nav {
-      max-width: 900px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 5px;
     }
-    header nav .logo {
-      font-size: 1.4rem;
-      font-weight: bold;
-    }
-    header nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-    }
-    header nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.3s;
-    }
-    header nav ul li a:hover {
-      color: #ffd700;
+    header p {
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: #f0f0f0;
     }
 
     main {
       max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
+      margin: 30px auto;
+      padding: 20px;
       background: white;
-      border-radius: 8px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
     section {
-      padding: 40px 0;
-      border-bottom: 1px solid #eee;
-    }
-    section:last-child {
-      border-bottom: none;
+      margin-bottom: 40px;
     }
     h2 {
       color: #008cba;
@@ -84,41 +64,59 @@
       gap: 15px;
     }
     ul.skills li {
-      background: #e0f0ff;
-      color: #008cba;
-      padding: 8px 15px;
+      background: #d2edff;
+      color: #007bb5;
+      padding: 10px 18px;
       border-radius: 20px;
       font-weight: 600;
     }
+
+    .contact-icons {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin-top: 15px;
+    }
+    .contact-icons a {
+      text-decoration: none;
+      color: #008cba;
+      font-size: 1.2rem;
+      transition: transform 0.3s;
+    }
+    .contact-icons a:hover {
+      transform: scale(1.2);
+    }
+
     footer {
       text-align: center;
-      padding: 15px 20px;
+      padding: 20px;
       color: #666;
       font-size: 0.9rem;
     }
 
-    /* Responsive */
     @media (max-width: 600px) {
-      header nav ul {
+      .contact-icons {
         flex-direction: column;
-        gap: 10px;
+        align-items: flex-start;
       }
     }
   </style>
+  <!-- FontAwesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
   <header>
-    <nav>
-      <div class="logo">Buse Kaplan</div>
-   
-    </nav>
+    <h1>Buse Kaplan</h1>
+    <p>Web Tasarım ve Kodlama</p>
   </header>
 
   <main>
     <section id="about">
       <h2>Hakkımda</h2>
-      <p>Bandırma On Yedi Eylül Üniversitesi Gönen Meslek Yüksekokulu Web Tasarım ve Kodlama mezunuyum. Web geliştirme, tasarım ve dijital dünyada kendimi sürekli geliştiriyorum.</p>
-     
+      <p>Merhaba! Ben Buse Kaplan. Bandırma Onyedi Eylül Üniversitesi Gönen MYO Web Tasarım ve Kodlama mezunuyum. Web tasarımı, kullanıcı arayüzü ve dijital pazarlama konularında tutkuluyum.</p>
+      <p>WordPress ve Elementor ile özgün ve mobil uyumlu web siteleri oluşturabiliyorum. SEO ve blog yönetimi konularında bilgi sahibiyim; içeriklerin arama motorlarında üst sıralarda yer almasını sağlayacak tekniklere hâkimim.</p>
+      <p>Ayrıca Adobe Photoshop, Adobe XD ve Canva gibi tasarım araçlarıyla yaratıcı çözümler üretiyorum. Web projelerinde tasarımdan yayına kadar tüm süreci yönetebilecek becerilere sahibim.</p>
     </section>
 
     <section id="skills">
@@ -132,27 +130,34 @@
         <li>TypeScript</li>
         <li>Photoshop</li>
         <li>Adobe XD</li>
-        <li>SEO & Blog Yönetimi</li>
+        <li>Canva</li>
+        <li>SEO</li>
+        <li>Blog Yönetimi</li>
       </ul>
     </section>
 
     <section id="experience">
       <h2>Deneyim</h2>
-      <p><strong>Martaş </strong> — Üretim Görevlisi</p>
-      <p><strong>Tat Gıda </strong> — Üretim Görevlisi</p>
+      <p><strong>Martaş</strong> — Üretim Görevlisi</p>
+      <p><strong>Tat Gıda</strong> — Üretim Görevlisi</p>
       <p><strong>Marmara Fide</strong> — Üretim Görevlisi</p>
       <p><strong>Çılgın Pikseller Dijital Reklam Ajansı</strong> — Stajyer</p>
-      <p>şu anda Çılgın Pikseller'de staj yapıyorum.</p>
+      <p>Şu anda Çılgın Pikseller'de web tasarım stajımı yapmaktayım.</p>
     </section>
 
     <section id="contact">
       <h2>İletişim</h2>
-      <p>Email: <a href="mailto:busekaplan937@gmail.com">busekaplan937@gmail.com</a></p>
+      <p>E-mail: <a href="mailto:busekaplan937@gmail.com">busekaplan937@gmail.com</a></p>
+      <div class="contact-icons">
+        <a href="https://www.linkedin.com/in/buse-kaplan-ba140b316/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      </div>
     </section>
   </main>
 
   <footer>
-    © 2025 Buse Kaplan
+    © 2025 Buse Kaplan. Tüm hakları saklıdır.
   </footer>
+
 </body>
 </html>
